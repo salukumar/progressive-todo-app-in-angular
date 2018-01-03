@@ -1,0 +1,59 @@
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  /* margin: 200px; */
+  margin: 0;
+  font-family: Roboto, sans-serif; 
+} 
+
+md-icon{
+  font-family: 'Material Icons' !important;
+}
+
+ .docs-example-viewer-wrapper {
+  border: 1px solid rgba(0,0,0,.03);
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  margin: 4px;
+  background: white!important;
+  
+  /* display: block;
+  padding: 20px 0; */
+}
+
+.card {
+  background: #D86E6E!important;
+}
+
+.center {
+  text-align: center!important;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.example-form {
+  min-width: 150px!important;
+  max-width: 500px!important;
+  width: 100%!important;
+}
+
+.example-full-width {
+  width: 100%!important;
+}
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.list {
+  background:#00bcd4!important;
+  /* text-align: center; */
+}
+.task-list{
+  display: block!important;
+}
+.strike {
+  text-decoration: line-through;
+}
+

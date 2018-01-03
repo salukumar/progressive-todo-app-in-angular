@@ -1,0 +1,25 @@
+<div class="col-md-12 ">
+  <mat-card class="list">
+    <div class="col-md-10 center">
+      <mat-grid-tile >TASK LIST</mat-grid-tile >
+     </div>
+    <div class = "col-md-2">
+   
+    <button mat-raised-button routerLink="" routerLinkActive="active" color="success">Add Task</button>
+  </div>
+  </mat-card>
+</div>
+<div class="docs-example-viewer-wrapper">
+  <mat-card class="example-card">
+    <mat-card-content>
+      
+        <mat-list *ngIf="tasks">
+            <mat-checkbox  (click)="done(task.id)" class="task-list"  *ngFor="let task of tasks" >
+                <mat-list-item [ngClass]="{'strike':task.isDone == 1}">{{task.name}}</mat-list-item>
+           </mat-checkbox>
+           <span class="center" *ngIf="tasks.length ==0">No Results Found</span>
+          </mat-list>
+    </mat-card-content>
+  
+  </mat-card>
+</div>
